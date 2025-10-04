@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import '../App.css';
 import { BASE_URL } from '../config';
-import AddTocart from './AddToCart';
+import AddToCart from './AddToCart';
 
 
 export default function SingleView({data}) {
@@ -58,7 +58,7 @@ export default function SingleView({data}) {
       </div>
       <div className="pa3 flex justify-end">
         <span className="ma2 f4">${product.price}</span>
-      <AddTocart product={product}/>
+      <AddToCart product={product}/>
       </div>
     </article>
 

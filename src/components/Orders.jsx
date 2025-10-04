@@ -1,4 +1,4 @@
-import React, { use, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BASE_URL } from '../config';
 
 const Orders = () => {
@@ -18,7 +18,7 @@ const Orders = () => {
       })
   }
   
-  useEffect(() => {
+  useEffect(() => { 
     fetchOrders();
   }, []);
    

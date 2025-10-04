@@ -5,7 +5,7 @@ const Header = () => {
   
   const {cartItems} = useCart();
 
-  const totalItems = cartItems.reduce((acc, item) => acc +item.quamtity, 0);
+  const totalItems = cartItems.reduce((acc, item) => acc +item.quantity, 0);
 
 
   return (
