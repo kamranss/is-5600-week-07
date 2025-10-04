@@ -1,7 +1,8 @@
 import React, { useReducer, useContext } from 'react'
 
 // Initialize the context
-const CartContext = React.createContext()
+// const CartContext = React.createContext()
+export const CartContext = React.createContext()
 
 // defining the default state
 const initialState = {
@@ -118,4 +119,4 @@ const CartProvider = ({ children }) => {
 
 const useCart = () => useContext(CartContext)
 
-export { CartProvider, useCart }
+export { CartProvider, useCart}

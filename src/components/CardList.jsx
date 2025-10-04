@@ -22,18 +22,18 @@ const CardList = () => {
   //   setProducts(data.slice(offset, offset + limit));
   // }, [offset, limit, data])
 
-  // const filterTags = (tagQuery) => {
-  //   const filtered = data.filter(product => {
-  //     if (!tagQuery) {
-  //       return product
-  //     }
+  const filterTags = (tagQuery) => {
+    const filtered = data.filter(product => {
+      if (!tagQuery) {
+        return product
+      }
 
-  //     return product.tags.find(({title}) => title === tagQuery)
-  //   })
+      return product.tags.find(({title}) => title === tagQuery)
+    })
 
-  //   setOffset(0)
-  //   setProducts(filtered)
-  // }
+    setOffset(0)
+    setProducts(filtered)
+  }
 
   
   const fetchProducts =()=> {

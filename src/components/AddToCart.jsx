@@ -1,11 +1,13 @@
-// import { useContext } from "react";
+import { useContext } from "react";
+// import {useCart} from "../state/CartProvider"
+import { CartContext } from "../state/CartProvider"
 
 export default function OrderButton({product}){
-    const {AddToCart} = useContext(CartContext);
+    const {addToCart} = useContext(CartContext);
 
     const handleClick = (product) => {
         console.log("Adding to cart", product);
-        AddToCart(product);
+        addToCart(product);
     }
 
     return(
