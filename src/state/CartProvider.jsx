@@ -4,7 +4,7 @@ import React, { useReducer, useContext } from 'react'
 // const CartContext = React.createContext()
 export const CartContext = React.createContext()
 
-// defining the default state
+
 const initialState = {
   itemsById: {},
   allItems: [],
