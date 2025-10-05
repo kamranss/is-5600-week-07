@@ -7,10 +7,7 @@ const Cart = () => {
 
   const {cartItems, removeFromCart, getCartTotal, updateItemQuantity} = useCart();
 
-  // const cartItems = [];
-  // const removeFromCart = () => {};
-  // const updateItemQuantity = () => {};
-  // const getCartTotal = () => {};
+
 
   return (
     <div className="center mw7 mv4">
