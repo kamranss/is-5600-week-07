@@ -53,13 +53,13 @@ const cartReducer = (state, action) => {
     //Individual task 1
     case UPDATE_ITEM_QUANTITY:
       console.log({state});
-      const returnItem = state.itemsById[payload._id];
+      const currentItem = state.itemsById[payload._id];
       const updateItemState = {
         ...state,
         itemsById: {
           ...state.itemsById,
         [payload._id]: {
-          ...returnItem,
+          ... currentItem,
           quantity: currentItem.quantity + payload.quantity,
         },
       }
